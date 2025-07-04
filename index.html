@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Ranae's Brilliant Back-to-School Bundles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .main-content {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #4a5568;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature:nth-child(1) { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .feature:nth-child(2) { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .feature:nth-child(3) { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+
+        .feature h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        .benefits {
+            background: #f7fafc;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .benefits h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2d3748;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #667eea;
+        }
+
+        .social-proof {
+            background: #edf2f7;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .testimonial {
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #2d3748;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.3);
+        }
+
+        .cta-button:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+        }
+
+        .pricing {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .price-highlight {
+            font-size: 2.5rem;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Miss Ranae's Brilliant Back-to-School Bundles</h1>
+            <p class="subtitle">Everything Your Child Needs for Academic Success</p>
+            <p class="tagline">✨ Save Time and Money on Back-to-School Supplies! ✨</p>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="section">
+                <h2>Why Stress Over School Shopping?</h2>
+                <p style="text-align: center; font-size: 1.2rem; color: #4a5568; margin-bottom: 40px;">
+                    Skip the crowded stores, long lines, and endless supply lists. Miss Ranae has compiled supply lists from schools across the Santee School District and done all the work for you!
+                </p>
+
+                <div class="features">
+                    <div class="feature">
+                        <h3>🎒 Complete & Curated</h3>
+                        <p>Every bundle is carefully assembled with high-quality supplies that teachers actually recommend. No guessing, no missing items!</p>
+                    </div>
+                    <div class="feature">
+                        <h3>💰 Budget-Friendly</h3>
+                        <p>Get premium supplies at bulk prices. Save money compared to buying individually while getting better quality items.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🚚 Convenient Delivery</h3>
+                        <p>Delivered right to your door or available for easy pickup. Spend your time on what matters most - your family!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits">
+                <h3>Two Perfect Bundle Options</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                    <div style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <h4 style="font-size: 1.8rem; margin-bottom: 15px; color: #2d3748; text-align: center;">K-5th Grade Bundle - $25</h4>
+                        <p style="text-align: center; margin-bottom: 20px; color: #4a5568; font-style: italic;">Perfect for elementary students (one classroom)</p>
+                        <ul style="color: #2d3748; font-size: 1.1rem;">
+                            <li>✅ Backpack</li>
+                            <li>✅ (2) Composition notebooks (WR)</li>
+                            <li>✅ Pencil Box</li>
+                            <li>✅ (16) Color Markers</li>
+                            <li>✅ (24) Pack Crayons</li>
+                            <li>✅ (12) Color Pencils</li>
+                            <li>✅ (1) Sharpener</li>
+                            <li>✅ (2) Glue sticks</li>
+                            <li>✅ (2-3) #2 Pencils</li>
+                            <li>✅ (2) White erasers</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <h4 style="font-size: 1.8rem; margin-bottom: 15px; color: #2d3748; text-align: center;">6th-12th Grade Bundle - $15</h4>
+                        <p style="text-align: center; margin-bottom: 20px; color: #4a5568; font-style: italic;">Perfect for middle & high school (moving class to class)</p>
+                        <ul style="color: #2d3748; font-size: 1.1rem;">
+                            <li>✅ (2) Composition notebooks (CR)</li>
+                            <li>✅ Pencil Pouch</li>
+                            <li>✅ (16) Color Markers</li>
+                            <li>✅ (2) Blue ink pens</li>
+                            <li>✅ (2) Black ink pens</li>
+                            <li>✅ (12) Color Pencils</li>
+                            <li>✅ (1) Sharpener</li>
+                            <li>✅ (2) Glue sticks</li>
+                            <li>✅ (2) #2 Pencils</li>
+                            <li>✅ (3) Mechanical Pencils</li>
+                            <li>✅ (2) White erasers</li>
+                            <li>✅ (6) Colored Highlighters</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-size: 1.1rem; color: #4a5568; background: #edf2f7; padding: 20px; border-radius: 10px;">
+                    📚 <strong>Based on supply lists from schools across the Santee School District</strong><br>
+                    Including: Cajon Park, Carlton Hills, Carlton Oaks, Chet F. Harritt STEAM, Hill Creek, Pepper Drive, PRIDE Academy at Prospect Avenue, Rio Seco, Sycamore Canyon, and Alternative School - ensuring your child has exactly what their teachers expect!
+                </p>
+            </div>
+
+            <div class="social-proof">
+                <p class="testimonial">
+                    "Miss Ranae saved me hours of shopping and my kids had everything they needed on day one! The quality is amazing and the price was better than what I would have paid at the store."
+                </p>
+                <p class="testimonial-author">- Amy T., Parent of Three</p>
+            </div>
+
+            <div class="pricing">
+                <h2>Ready for Back-to-School Success?</h2>
+                <div style="display: flex; justify-content: center; gap: 40px; margin: 30px 0; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <p style="font-size: 1.2rem; color: #4a5568;">K-5th Grade Bundle</p>
+                        <p class="price-highlight">$25</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p style="font-size: 1.2rem; color: #4a5568;">6th-12th Grade Bundle</p>
+                        <p class="price-highlight">$15</p>
+                    </div>
+                </div>
+                <p style="color: #4a5568; text-align: center;">All supplies included - no hidden costs!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Make Back-to-School Easy?</h2>
+            <p>Order your bundle today and check "school supplies" off your to-do list!</p>
+            <a href="https://forms.gle/iV4hgxTeRro4ieaS6" class="cta-button">Order Your Bundle Now</a>
+            <p style="margin-top: 20px; font-size: 1rem; opacity: 0.8;">
+                📞 Questions? Text or call for custom bundles and bulk orders!
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Miss Ranae's Brilliant Back-to-School Bundles. Making back-to-school shopping brilliant, one bundle at a time!</p>
+        </div>
+    </footer>
+</body>
+</html>
