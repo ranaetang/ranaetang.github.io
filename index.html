@@ -16,6 +16,7 @@
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-size: 16px;
         }
 
         .container {
@@ -187,6 +188,8 @@
             font-weight: bold;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(255,107,107,0.3);
+            min-height: 44px;
+            min-width: 200px;
         }
 
         .cta-button:hover {
@@ -229,6 +232,96 @@
             
             .features {
                 grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                padding: 18px 32px;
+                font-size: 1.2rem;
+                min-height: 50px;
+                width: 90%;
+                max-width: 300px;
+                margin: 0 auto;
+                display: block;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+                padding: 12px 24px;
+                margin: 20px 10px 30px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .feature {
+                margin-bottom: 20px;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .price-highlight {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                line-height: 1.2;
+                margin-bottom: 25px;
+            }
+            
+            .hero .subtitle {
+                line-height: 1.4;
+                margin-bottom: 25px;
+            }
+            
+            .feature p, .benefit-item {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .section {
+                margin-bottom: 40px;
+            }
+            
+            .main-content {
+                padding: 40px 0;
+            }
+            
+            .benefits, .social-proof {
+                padding: 30px 20px;
+                margin: 30px 0;
+            }
+            
+            .pricing div {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .pricing div > div {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 16px 24px;
+                width: 95%;
+            }
+            
+            .container {
+                padding: 0 10px;
             }
         }
     </style>
@@ -323,11 +416,11 @@
             <div class="pricing">
                 <h2>Ready for Back-to-School Success?</h2>
                 <div style="display: flex; justify-content: center; gap: 40px; margin: 30px 0; flex-wrap: wrap;">
-                    <div style="text-align: center;">
+                    <div style="text-align: center; min-width: 200px;">
                         <p style="font-size: 1.2rem; color: #4a5568;">K-5th Grade Bundle</p>
                         <p class="price-highlight">$33</p>
                     </div>
-                    <div style="text-align: center;">
+                    <div style="text-align: center; min-width: 200px;">
                         <p style="font-size: 1.2rem; color: #4a5568;">6th-12th Grade Bundle</p>
                         <p class="price-highlight">$19</p>
                     </div>
