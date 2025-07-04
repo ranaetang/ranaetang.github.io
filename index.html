@@ -158,6 +158,70 @@
             color: #2d3748;
         }
 
+        .faq-section {
+            background: #f7fafc;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .faq-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .faq-item h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .bundle-cta-button {
+            display: inline-block;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            min-height: 44px;
+            min-width: 180px;
+        }
+
+        .bundle-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .contact-section {
+            background: #f7fafc;
+            padding: 60px 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
         .cta-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -293,6 +357,27 @@
                 padding: 30px 20px;
                 margin: 30px 0;
             }
+
+            .faq-section {
+                padding: 40px 20px;
+                margin: 30px 0;
+            }
+
+            .faq-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-section {
+                padding: 40px 20px;
+                margin: 30px 0;
+            }
+
+            .bundle-cta-button {
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
             
             .pricing div {
                 flex-direction: column;
@@ -367,17 +452,21 @@
                         <h4 style="font-size: 1.8rem; margin-bottom: 15px; color: #2d3748; text-align: center;">K-5th Grade Bundle - $33</h4>
                         <p style="text-align: center; margin-bottom: 20px; color: #4a5568; font-style: italic;">Perfect for elementary students (one classroom)</p>
                         <ul style="color: #2d3748; font-size: 1.1rem;">
-                            <li>✅ Backpack</li>
+                            <li>✅ <strong>Backpack</strong></li>
                             <li>✅ (2) Composition notebooks (WR)</li>
-                            <li>✅ Pencil Box</li>
+                            <li>✅ <strong>Pencil Box</strong></li>
                             <li>✅ (16) Color Markers</li>
-                            <li>✅ (24) Pack Crayons</li>
+                            <li>✅ <strong>(24) Pack Crayons</strong></li>
                             <li>✅ (12) Color Pencils</li>
                             <li>✅ (1) Sharpener</li>
                             <li>✅ (2) Glue sticks</li>
                             <li>✅ (2-3) #2 Pencils</li>
                             <li>✅ (2) White erasers</li>
                         </ul>
+                        <p style="font-style: italic; color: #666; font-size: 0.9rem; margin-top: 15px;">* Items in bold not included in 6th-12th grade bundle</p>
+                        <div style="text-align: center; margin-top: 25px;">
+                            <a href="https://forms.gle/iV4hgxTeRro4ieaS6" class="bundle-cta-button" style="background: #667eea;">Order K-5 Bundle - $33</a>
+                        </div>
                     </div>
                     
                     <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -385,18 +474,37 @@
                         <p style="text-align: center; margin-bottom: 20px; color: #4a5568; font-style: italic;">Perfect for middle & high school (moving class to class)</p>
                         <ul style="color: #2d3748; font-size: 1.1rem;">
                             <li>✅ (2) Composition notebooks (CR)</li>
-                            <li>✅ Pencil Pouch</li>
+                            <li>✅ <strong>Pencil Pouch</strong></li>
                             <li>✅ (16) Color Markers</li>
-                            <li>✅ (2) Blue ink pens</li>
-                            <li>✅ (2) Black ink pens</li>
+                            <li>✅ <strong>(2) Blue ink pens</strong></li>
+                            <li>✅ <strong>(2) Black ink pens</strong></li>
                             <li>✅ (12) Color Pencils</li>
                             <li>✅ (1) Sharpener</li>
                             <li>✅ (2) Glue sticks</li>
                             <li>✅ (2) #2 Pencils</li>
-                            <li>✅ (3) Mechanical Pencils</li>
+                            <li>✅ <strong>(3) Mechanical Pencils</strong></li>
                             <li>✅ (2) White erasers</li>
-                            <li>✅ (6) Colored Highlighters</li>
+                            <li>✅ <strong>(6) Colored Highlighters</strong></li>
                         </ul>
+                        <p style="font-style: italic; color: #666; font-size: 0.9rem; margin-top: 15px;">* Items in bold not included in K-5th grade bundle</p>
+                        <div style="text-align: center; margin-top: 25px;">
+                            <a href="https://forms.gle/iV4hgxTeRro4ieaS6" class="bundle-cta-button" style="background: #48bb78;">Order 6-12 Bundle - $19</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="comparison-highlight" style="background: #edf2f7; padding: 25px; border-radius: 15px; margin: 30px 0; text-align: center;">
+                    <h4 style="color: #2d3748; margin-bottom: 15px; font-size: 1.4rem;">🎯 Quick Comparison</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                        <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #ff9a9e;">
+                            <strong>K-5th Grade ($33)</strong><br>
+                            <small>Backpack, pencil box, crayons - one classroom setup</small>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px; border-left: 4px solid #a8edea;">
+                            <strong>6th-12th Grade ($19)</strong><br>
+                            <small>Pencil pouch, pens, mechanical pencils, highlighters - multi-class portability</small>
+                        </div>
                     </div>
                 </div>
                 
@@ -413,6 +521,64 @@
                 <p class="testimonial-author">- Amy T., Parent of Three</p>
             </div>
 
+            <div class="faq-section">
+                <h2 style="text-align: center; margin-bottom: 40px; color: #4a5568;">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>📦 How long does delivery take?</h3>
+                        <p>Local delivery within Santee area: 2-3 business days. We also offer convenient pickup options to save time!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>🔄 What if an item is out of stock?</h3>
+                        <p>We'll contact you immediately and substitute with an equivalent or better item, or offer a partial refund. Your satisfaction is guaranteed!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>📝 What if I need multiple bundles?</h3>
+                        <p>Each bundle is designed for one student. Simply order multiple bundles for multiple children - we offer convenient bulk ordering through our form!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>📞 How can I contact you?</h3>
+                        <p>Text or call us for fastest response! We typically respond within 2-4 hours during business hours. You can also use our order form for standard requests.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>💰 Are there any hidden fees?</h3>
+                        <p>No hidden costs! The price you see includes all supplies. Local delivery is FREE within the Santee area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 style="text-align: center; margin-bottom: 30px; color: #4a5568;">Questions? Need Help Ordering?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                    <div style="text-align: center; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h3 style="color: #2d3748; margin-bottom: 15px;">📞 Call or Text</h3>
+                        <p style="color: #4a5568; margin-bottom: 10px;">For fastest response!</p>
+                        <p style="color: #667eea; font-weight: bold; font-size: 1.1rem;">Response time: 2-4 hours</p>
+                    </div>
+                    <a href="mailto:riniscrafts@gmail.com?subject=Back-to-School Bundle Question" style="text-decoration: none; color: inherit;">
+                        <div style="text-align: center; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <h3 style="color: #2d3748; margin-bottom: 15px;">📧 Email</h3>
+                            <p style="color: #667eea; margin-bottom: 10px; font-weight: bold;">riniscrafts@gmail.com</p>
+                            <p style="color: #4a5568; font-size: 1rem;">Response time: 24 hours</p>
+                        </div>
+                    </a>
+                    <div style="text-align: center; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <h3 style="color: #2d3748; margin-bottom: 15px;">📝 Multiple Orders</h3>
+                        <p style="color: #4a5568; margin-bottom: 10px;">Multiple kids? Multiple bundles?</p>
+                        <p style="color: #667eea; font-weight: bold; font-size: 1.1rem;">Easy bulk ordering!</p>
+                    </div>
+                </div>
+                <div style="background: #f0f8ff; padding: 25px; border-radius: 15px; text-align: center;">
+                    <h3 style="color: #2d3748; margin-bottom: 15px;">💡 Why Contact Us?</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                        <p style="color: #4a5568; margin: 0;">✅ Bulk ordering for multiple children</p>
+                        <p style="color: #4a5568; margin: 0;">✅ Questions about bundle contents</p>
+                        <p style="color: #4a5568; margin: 0;">✅ Special delivery arrangements</p>
+                        <p style="color: #4a5568; margin: 0;">✅ Payment and order questions</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="pricing">
                 <h2>Ready for Back-to-School Success?</h2>
                 <div style="display: flex; justify-content: center; gap: 40px; margin: 30px 0; flex-wrap: wrap;">
@@ -425,7 +591,7 @@
                         <p class="price-highlight">$19</p>
                     </div>
                 </div>
-                <p style="color: #4a5568; text-align: center;">All supplies included - no hidden costs!</p>
+                <p style="color: #4a5568; text-align: center;">All supplies included - FREE local delivery!</p>
             </div>
         </div>
     </section>
@@ -436,14 +602,14 @@
             <p>Order your bundle today and check "school supplies" off your to-do list!</p>
             <a href="https://forms.gle/iV4hgxTeRro4ieaS6" class="cta-button">Order Your Bundle Now</a>
             <p style="margin-top: 20px; font-size: 1rem; opacity: 0.8;">
-                📞 Questions? Text or call for custom bundles and bulk orders!
+                📞 Questions? Text or call for fastest response! 📧 <a href="mailto:riniscrafts@gmail.com?subject=Back-to-School Bundle Question" style="color: white; text-decoration: underline;">riniscrafts@gmail.com</a>
             </p>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Miss Ranae's Brilliant Back-to-School Bundles. Making back-to-school shopping brilliant, one bundle at a time!</p>
+            <p>&copy; 2025 Miss Ranae's Brilliant Back-to-School Bundles. Quality supplies for student success!</p>
         </div>
     </footer>
 </body>
